@@ -61,3 +61,26 @@ const activeElemOnScroll = function () {
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+
+
+
+
+// Fungsi untuk menangani klik pada tautan WhatsApp
+function handleWhatsAppClick(event) {
+  event.preventDefault(); // Menghentikan perilaku default dari tautan
+  
+  var adminNumber = "6282210269977"; // Ganti dengan nomor telepon admin Anda
+  
+  // Pesan yang ingin Anda kirimkan
+  var message = encodeURIComponent("Pesan otomatis yang Anda inginkan");
+
+  // Buat URL khusus untuk membuka WhatsApp dengan chat admin dan pesan otomatis
+  var url = "https://wa.me/" + adminNumber + "?text=" + message;
+
+  // Buka tautan WhatsApp di jendela atau tab baru
+  window.open(url, '_blank');
+}
+
+// Ambil tautan WhatsApp dan tambahkan event listener
+var whatsappLink = document.getElementById("whatsappLink");
+whatsappLink.addEventListener("click", handleWhatsAppClick);
