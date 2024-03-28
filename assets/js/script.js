@@ -81,5 +81,8 @@ function handleWhatsAppClick(event) {
 }
 
 // Ambil tautan WhatsApp dan tambahkan event listener
-var whatsappLink = document.getElementById("whatsappLink");
+var whatsappLink = document.getElementById("whatsappLink1");
+whatsappLink.addEventListener("click", handleWhatsAppClick);
+
+var whatsappLink = document.getElementById("whatsappLink2");
 whatsappLink.addEventListener("click", handleWhatsAppClick);
