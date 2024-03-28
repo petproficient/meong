@@ -64,7 +64,6 @@ addEventOnElem(window, "scroll", activeElemOnScroll);
 
 
 
-
 // Fungsi untuk menangani klik pada tautan WhatsApp
 function handleWhatsAppClick(event) {
   event.preventDefault(); // Menghentikan perilaku default dari tautan
@@ -72,7 +71,7 @@ function handleWhatsAppClick(event) {
   var adminNumber = "6282210269977"; // Ganti dengan nomor telepon admin Anda
   
   // Pesan yang ingin Anda kirimkan
-  var message = encodeURIComponent("Pesan otomatis yang Anda inginkan");
+  var message = encodeURIComponent("Halo, saya ingin bertanya tentang produk dari toko Meong...");
 
   // Buat URL khusus untuk membuka WhatsApp dengan chat admin dan pesan otomatis
   var url = "https://wa.me/" + adminNumber + "?text=" + message;
